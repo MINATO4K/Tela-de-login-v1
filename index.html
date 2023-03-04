@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(220deg,#f670c1,#32defd);
+    width:98%;
+    color:#d3dd18;
+    height:759px;
+  }
+  .container{
+  display: flex;
+  flex-direction: column;
+  border-radius:15px;
+  position: relative;
+  height: 80%;
+  width:90%;
+  background: rgba(0,0,0,0.5);
+  }
+  .cadastrar{
+    display:none ;
+  }
+  .texto{ 
+    position: relative;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    margin-left: 71px;
+    width: 200px;
+    background-color: #333;
+    height: 50px;
+  }
+  form{
+    position: relative;
+    text-align: center;
+  }
+  h1{
+    color:#fff;
+    position: absolute;
+    top: -19px;
+    left: 12px;
+  }
+  #Usuario{
+    top:-78px;
+    left: 36%;
+    position: absolute;
+    font-size: 30px;
+  }
+  #senha{
+    position: absolute;
+    left:38%;
+    top: 36%;
+  }
+  li{
+    margin-top: 25%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+  }
+  svg{
+    height: 36px;
+    width:36px;
+    left:3%;
+    top:3%;
+    position: absolute;
+  }
+  input{
+    text-align: center;
+    font-size: 22px;
+    width:67%;
+    color: #223;
+    border-radius:15px;
+    height: 50px;
+    border: 2px ;
+  }
+  #log{
+    color: #000;
+    background: #fac140;
+    font-size: 22px;
+    position: absolute;
+    height: 38px;
+    top: 110%;
+    width:250px;
+    left: 14.5%;
+    border: none;
+    border-radius:30px ;
+  }
+  #add{
+    color: #fff;
+    background:#351c9c;
+    font-size: 22px;
+    position: absolute;
+    height: 38px;
+    top: 140%;
+    width:250px;
+    left: 14.5%;
+    border: none;
+    border-radius:30px ;
+  }
+  @media only screen and (min-width:600px){
+    body{
+      height: 100vh;
+    }
+    .container{
+      height: 60%;
+    }
+    li{
+      margin-top:20%;
+    }
+    input{
+      height: 70px;
+    }
+    .texto{
+      width:410px;
+      height:100px ;
+      margin-left: 245px;
+    }
+    svg{
+      top: -6px;
+      height: 96px;
+      width:96px;
+    }
+    #Usuario{
+      font-size: 80px;
+      top: -196px;
+    }
+    #log{
+      left: 20%;
+      width:500px;
+      height: 80px;
+      top: 95%;
+    }
+    #add{
+      left: 20%;
+      width:500px;
+      height: 80px;
+      top: 120%;
+    }
+    h3{
+      font-size: 80px;
+    }
+    h1{
+    font-size: 68px;
+    top: -40px;
+    left: 24px;
+  }
+  }
+</style>
+
+
+</head>
+<body>
+<div class="container">
+  <div class="texto">
+    <h1>Conecta 4g</h1>
+  </div> 
+  <div class="login">
+    <form>
+      <h3 id="Usuario">Usuário</h3>
+    <li>
+      <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg> <input type="text">
+    </li>
+    <h3 id="senha">Senha</h3>
+    <li>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+  <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+  <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+</svg> <input type="text">
+    </li>
+    <button type="submit" id="log">Entrar </button>
+    <button id="add">Cadastrar-se</button>
+  </div> 
+  <div class="cadastrar">
+    <li>
+      iconne <input type="text">
+    </li>
+    <li>
+      iconne <input type="text">
+    </li>
+    <li>
+      iconne <input type="text">
+    </li>
+    </form>
+  </div> 
+</div> 
+</body>
+</html> 
